@@ -1,0 +1,63 @@
+- Update 13-12-2018 :
+
+    Fixed Nsudo context menu.
+    Added reg query to add Nsudo path to 'environment variable path' if it isn't.
+    Added more 'Default_WinX' options, to restore only default group3 or group2.
+    New 'RunExlorerShellAsTrustedInstaller.exe' (v2.0), which now deletes 'CreateExplorerShellUnelevatedTask' task if present.
+    Added Start Menu Tile Icons for 'RunExlorerShellAsTrustedInstaller.exe' (related post here).
+    Added Start Menu Tile Icons for 'Check Update with WFC' .bat script (related post here).
+    New "multi-size" icon for 'RunExlorerShellAsTrustedInstaller.exe' and WinX apps.
+    Added my personal scripts and tools to 'additional script and tools' folder.
+    .bat script or .exe, at choice, for 'WinX Menu', 'Install required scripts and tools' and 'install additional scripts and tools'.
+    A few more changes.
+
+
+- Update 14-12-2018 :
+
+    Replaced 7zip files by Powershell "Expand-archive" command, which reduces considerably the size of the project folder.
+    Made the shortcuts from main folders "portable" (you can move the project folder without losing the shortcuts target)
+    Replaced the four Context Menu_MERGED .reg with batches, to set the registry tweaks that have their registry key locked.
+
+
+-Update 22-12-2018 :
+
+    Changed the extraction method again...Script will search for 7zip in program files and then Winrar, and finally uses Powershell if none of those were found.
+    7zip is the fastest but both with Winrar are soo much faster at extracting than PS...
+    I believe most people have either 7zip or Winrar installed, and if it's not the case Powershell will take care of the zip "extraction"...
+    Reworked the "WinX Menu" part, as I noticed Powershell was not saving hidden or system folder attributes when extracting.
+    Which ends up making command prompt shell (launched from WinX menu) showing as 01-command (in its title bar), and desktop.ini files not hidden (not a big deal but an omission since the beginning).
+    Fixed now...and this works pretty well.
+    New WindowsUpdate ("special WFC") script, now WITHOUT creating a scheduled task, just by "event query" and findstring...
+    Finding the good xml syntax, and the strings to look for was a hard one.
+    Might improve that script again soon...but it works well.
+    Reworked a bit the installation scripts, now prompting to install the start menu links with special tile icons, and replaced portable shortcuts by a small "launch" script.
+    Also added custom tile menu icon for NSudo, so it can be BIIIIG on your start menu instead of tiny icons.
+    And for all that, I added start menu links to the folder and the commands  to "update" the icon display...
+    Finally the folder size got reduced, again...
+
+
+- Update 24-12-2018 :
+
+    Replaced NSudo context menu .reg files with NSudo "Installer" : That way, NSudo context menu "fix" will work for everyone, as it will add the registry keys for context menu depending on where you have it installed or where you like to install...
+    For the same reason I replaced main "Applications_Context_Menu_Merged.reg" with a script, to include latest NSudo changes. This also adds the ability to skip unwanted options, as I added a small prompt (Y/N) before each command, at the contrary of the old big merged .reg file which added everything.
+    Some  minor changes to the "installer" scripts to include latest NSudo changes.
+    Update 24-12-2018 (v2): Fixed a missing redirection in 07_Additional_Scripts_and_Tools.bat script (if you reply NO to start menu links). Replaced xcopy by robocopy command, a bit slower but works better at the end (less headache for me...)
+
+-25-12-2018: Fixed the fix...
+
+-Update 18-01-2019 :
+
+    Added SetACL to "Required_Scripts_and_Tools": When one use WFC with Secure Profile ON, SetACL is required to change registry authorizations (together with NSudo) for "Toggle Firewall" and "Windows Update" scripts to work...
+    Forgot about it because I had it installed since long time and thought it was a "Windows file".
+    Added NSudoG (and NSudoC) : "RunExplorerShellAsTrustedInstaller",  and other scripts requiring NSudo launch faster with NsudoG.
+    Replaced Setx command by pathman (from windows ressource kit 2003) to set System Environment Variables Path better when installing scripts and tools. Setx truncates the path after 1024 character limit, which means if you have a lot of paths in your '"system environment variables path", the command will not append the path, and will truncate existing ones after 1024 characters. 2nd win, pathman does not append path if path already exists, making install script easier and more "robust".
+    Updated NSudo Installer app and Windows Update script, as of 08-01-2019.
+    Added (Optional) Winrar and 7zip Context Menus to display one next to the other in context menu, (and with 7-zip logically/alphabetically first). Note: You need to set both as "cascading" context menu to look nicely.
+    Added some file types to Notepad++ context menu.
+    Changed Powershell as Admin context menu commands, which were not parsed correctly to registry.. And found a much better way to set it (simply inverted runas/cmd.exe with runas/powershell).
+    Changed all scripts and apps accordingly...
+
+
+-Update 21-01-2019 : Fixed Context Menu Restore Scripts
+
+-Update 12-06-2019 
