@@ -7,7 +7,7 @@ Infos: https://forums.mydigitallife.net/threads/custom-policies-set.78129/#post-
 
 
 ---------------------------------------------------------------------------------------------------
-================================PERSONALIZE PROJECT NEXTGEN CONTENT================================
+# PERSONALIZE PROJECT NEXTGEN CONTENTS
 ---------------------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------------
@@ -369,7 +369,7 @@ https://www.uwe-sieber.de/usbtreeview_e.html
 
 
 ---------------------------------------------------------------------------------------------------
---------------------------------RESTORE DEFAULT----------------------------------------------------
+# RESTORE DEFAULT
 ---------------------------------------------------------------------------------------------------
 
 'RESTORE DEFAULT' folder is an EXACT "mirror reflection" of the 'CUSTOMIZE' folder with all the "inverted" registry tweaks, which allows to REVERSE EVERY SINGLE TWEAK you could have made.
