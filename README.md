@@ -8,13 +8,11 @@ Infos: https://forums.mydigitallife.net/threads/custom-policies-set.78129/#post-
 
 
 ---------------------------------------------------------------------------------------------------
-PERSONALIZE PROJECT NEXTGEN CONTENTS
----------------------------------------------------------------------------------------------------
-
+# PERSONALIZE PROJECT NEXTGEN CONTENTS
 
 # CUSTOMIZE ALL
 
-# 01 DEBLOAT Context Menu
+# 01 Debloat Context Menu
 
 -01 Remove 'print' and 'printto' for common text-based files and internet shortcuts.
     Some of the registry keys have permissions locked by default, so you might need to add that file through NSudo for complete optimization, or run batch file.
@@ -34,11 +32,8 @@ PERSONALIZE PROJECT NEXTGEN CONTENTS
     -Offline Files: you don't need offline files if you don't use sync center.
     -PlayTo is deprecated.
     -Workfolder: Useless when you only have/use one computer (which isn't in a network/domain) and/or don't need to set workfolders.
-
 ---------------------------------------------------------------------------------------------------
-
-
-# 02 CUSTOMIZE Context Menu
+# 02 Customize Context Menu
 
 I added some screenshots in the folder to help you determine which settings you'd like to apply.
 CF included Context Menus screenshots.
@@ -112,9 +107,7 @@ DB08 -	Desktop Background : Windows Update
 	More infos: https://forums.mydigitallife.net/threads/windows-firewall-configuration-truly-block-everything.64640/page-14#post-1484425
 
 ---------------------------------------------------------------------------------------------------
-
-
-# 03 CUSTOMIZE Control Panel
+# 03 Customize Control Panel
 
 -01 ADD 'Classic Personalization' to Control Panel
 
@@ -122,9 +115,7 @@ DB08 -	Desktop Background : Windows Update
 
 
 ---------------------------------------------------------------------------------------------------
-
-
-# 04 CUSTOMIZE System/appeareance
+# 04 Customize System/appeareance
 
 -01 Explorer Personalization: Some personalizations found under HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced registry key.
 
@@ -140,12 +131,7 @@ DB08 -	Desktop Background : Windows Update
 Note: This is default value. If you want 'Drive Letters' to appear before 'Drive Label', set dword value to 1 (dword:00000001)
 
 -07 SHOW seconds on taskbar clock
-
-
-
 ---------------------------------------------------------------------------------------------------
-
-
 # 05 Applications Context Menus
 
 -01 NSudo context menu: NSudo context menu for .exe instead of all file when installing NSudo.exe using -install switch
@@ -162,12 +148,8 @@ Note: Just cosmetic. Changes shell extension position so it will displays at bot
 -06 ADD "Open with Sound Forge Pro" for audio files and audio folders (Note: for Audio professionals)
 
 -07 ADD "Open with iZotope RX" for audio files and audio folders (Note: for Audio professionals)
-
-
 ---------------------------------------------------------------------------------------------------
-
-
-# 06 CUSTOMIZE WinX Menu
+# 06 Customize WinX Menu
 
 Simply run application .exe, or related .bat script.
 
@@ -229,8 +211,6 @@ https://winaero.com/request.php?21
 
 
 --------------------------------------------------------------------------------------------------
-
-
 # 07 Install Additional Scripts and Tools
 
 Simply run "Install_Additional_Scripts_and_Tools.exe or "Install_Additional_Scripts_and_Tools.bat to install additional scripts and tools.
@@ -370,7 +350,6 @@ https://openhardwaremonitor.org/
 https://www.uwe-sieber.de/usbtreeview_e.html
 
 -NirCmd : Usefull to hide windows and customize context menu
-
 
 ---------------------------------------------------------------------------------------------------
 # RESTORE DEFAULT
