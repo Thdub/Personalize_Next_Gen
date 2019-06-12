@@ -6,14 +6,15 @@ Download: https://github.com/Thdub/Personalize_Next_Gen/releases
 Infos: https://forums.mydigitallife.net/threads/custom-policies-set.78129/#post-1488737
 
 
----------------------------------------------------------------------------------------------------
-# PERSONALIZE PROJECT NEXTGEN CONTENTS
 
 ---------------------------------------------------------------------------------------------------
+PERSONALIZE PROJECT NEXTGEN CONTENTS
+---------------------------------------------------------------------------------------------------
+
+
 # CUSTOMIZE ALL
 
----------------------------------------------------------------------------------------------------
-01 DEBLOAT Context Menu
+# 01 DEBLOAT Context Menu
 
 -01 Remove 'print' and 'printto' for common text-based files and internet shortcuts.
     Some of the registry keys have permissions locked by default, so you might need to add that file through NSudo for complete optimization, or run batch file.
@@ -33,8 +34,10 @@ Infos: https://forums.mydigitallife.net/threads/custom-policies-set.78129/#post-
     -Offline Files: you don't need offline files if you don't use sync center.
     -PlayTo is deprecated.
     -Workfolder: Useless when you only have/use one computer (which isn't in a network/domain) and/or don't need to set workfolders.
-   
+
 ---------------------------------------------------------------------------------------------------
+
+
 # 02 CUSTOMIZE Context Menu
 
 I added some screenshots in the folder to help you determine which settings you'd like to apply.
@@ -109,6 +112,8 @@ DB08 -	Desktop Background : Windows Update
 	More infos: https://forums.mydigitallife.net/threads/windows-firewall-configuration-truly-block-everything.64640/page-14#post-1484425
 
 ---------------------------------------------------------------------------------------------------
+
+
 # 03 CUSTOMIZE Control Panel
 
 -01 ADD 'Classic Personalization' to Control Panel
@@ -117,6 +122,8 @@ DB08 -	Desktop Background : Windows Update
 
 
 ---------------------------------------------------------------------------------------------------
+
+
 # 04 CUSTOMIZE System/appeareance
 
 -01 Explorer Personalization: Some personalizations found under HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced registry key.
@@ -137,6 +144,8 @@ Note: This is default value. If you want 'Drive Letters' to appear before 'Drive
 
 
 ---------------------------------------------------------------------------------------------------
+
+
 # 05 Applications Context Menus
 
 -01 NSudo context menu: NSudo context menu for .exe instead of all file when installing NSudo.exe using -install switch
@@ -156,6 +165,8 @@ Note: Just cosmetic. Changes shell extension position so it will displays at bot
 
 
 ---------------------------------------------------------------------------------------------------
+
+
 # 06 CUSTOMIZE WinX Menu
 
 Simply run application .exe, or related .bat script.
@@ -218,6 +229,8 @@ https://winaero.com/request.php?21
 
 
 --------------------------------------------------------------------------------------------------
+
+
 # 07 Install Additional Scripts and Tools
 
 Simply run "Install_Additional_Scripts_and_Tools.exe or "Install_Additional_Scripts_and_Tools.bat to install additional scripts and tools.
