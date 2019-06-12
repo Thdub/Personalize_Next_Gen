@@ -204,9 +204,6 @@ For that, use either hashlnk: https://github.com/riverar/hashlnk or WinX Menu Ed
 
 hashlnk direct download link:
 https://github.com/riverar/hashlnk/blob/master/bin/hashlnk_0.2.0.0.zip
-
-WinX Menu Editor direct download link:
-https://winaero.com/request.php?21
 --------------------------------------------------------
 
 
@@ -224,8 +221,7 @@ I also added a few (free) utilities that I use often.
 Both utilities are based on my script which launches Nsudo and allows to change protected registry keys and services. It required intensive services testing/debugging...
 https://forums.mydigitallife.net/threads/solved-script-to-automate-services-default-state.78221/#post-1482368
 
-These 2 utilities will be extracted to "C:\Program Files\System Tools\Maintenance\Services Optimization"
-
+These utilities will be extracted to "C:\Program Files\System Tools\Maintenance\Services Optimization"
 
 -RunExplorerShellAsTrustedInstaller.exe
 
@@ -246,7 +242,6 @@ or if your link is in the "other" start menu :
 Note: 'RunExplorerShellAsTrustedInstaller' application and files will be extracted to "C:\Program Files\System Tools\System Utilities\Custom Tools"
 
 
-
 2) - Maintenance Scripts (custom):
 
 -CleanRevoUninstallerFolders.bat : Clear Revo Uninstaller leftovers from uninstalled applications (found in %USERPROFILE%\AppData\Local\VS Revo Group\Revo Uninstaller Pro), moving them to Recycle Bin.
@@ -256,39 +251,23 @@ Long time since I wanted to make that script to move TEMP contents to Recycle Bi
 
 -ClearEventViewerLogs.bat : Simply clear Event Viewer logs...
 
--Make Start Menu Links as Admin.ps1 : script to make some start menu links as admin, like powershell, cmd, and maintenance batch scripts.
-Function cmdlet created by http://rudolfvesely.com (and customized by myself). You can fully customize this script editing last lines, for example:
-	Get-ChildItem -Path "$env:programdata\Microsoft\Windows\Start Menu\Programs\Musique\"  -recurse | Where-Object {$_.Name -like "*lnk*" -and $_.Name -like "*Uninstall*"} | Set-RvShortcutToRunAsAdministrator -Verbose
-You see it is not limited to start menu, you could make any link from a choosen folder as admin in fact.
-
 -ResetNotificationAreaIconsCache.bat : Resets Notification Area icons cache.
 
+-RemovePowershellDuplicateLines.bat : It will remove duplicate lines from powershell console host history.
 
 Note: Maintenance scripts will be extracted to "C:\Program Files\System Tools\System Utilities\Maintenance\Scripts"
 
-
-
-3) - Custom Scripts :
+3) - Utility Scripts (custom)
 
 -DriversBackup_Desktop.ps1 : It will export all your 3rd party drivers, change drivers name to a more "human readable" mode, and sort them in folder by classname (graphic/Network/etc.)
 Note: Folder is extracted in 'TEMP' folder and then compressed as DriversBackup.zip on your Desktop. 
 
-Going further: If you want to keep the whole folder (and not a .zip), and change the path, replace last 2 lines with something like:
-	Move-Item "$DestinationPath" -Destination "C:\YOUR_OWN_BACKUP_PATH" -Force
-(-Force will "force replace" if folder already exist at YourDestination)
-or simply delete last 2 lines and replace $DestinationPath defined variable at line 9.
+-DriversBackup_ScriptFolder.ps1 : Same as above, but drivers are saved in a script folder, and folder is not compressed.
 
--Export_StartMenuLayout_and_make_Default.ps1 : Simple script to backup your start menu layout, and copy as Layoutmodifications.xml in Default profile, so it is loaded when you install/reinstall.
-It can be also useful when you are fighting with your start menu tiles (tiles resetting)
+-RemoveDuplicateLines.bat: Just drag and drop any file on to it to remove duplicate lines. 
+Note: It will keep last occurence while stripping blank lines.
 
-Going further: if you want to keep old saved one, for example, replace code with:
-	Export-StartLayout -Path "$env:UserProfile\Desktop\LayoutModification.xml" -verbose
-	Copy-Item "$env:UserProfile\Desktop\LayoutModification.xml" -Destination "C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\LayoutModification.xml" -Force
-	Copy-Item "$env:UserProfile\Desktop\LayoutModification.xml" -Destination "$env:LocalAppData\Microsoft\Windows\Shell\LayoutModification.xml" -Force
-	Move-Item "C:\YOUR_OWN_BACKUP_PATH\LayoutModification.xml" -Destination "C:\YOUR_OWN_BACKUP_PATH\LayoutModification_old.xml" -Force
-	Move-Item "$env:UserProfile\Desktop\LayoutModification.xml" -Destination "C:\YOUR_OWN_BACKUP_PATH\LayoutModification.xml" -Force
-* Replace 'YOUR_OWN_BACKUP_PATH' with your own, of course...
-
+Program launchers:
 -RegWorkshopX64_TI.bat : Launches Registry Workshop with Trusted Installer privileges (NSudo and Registry workshop required).
 I just love Registry workshop (it's not free, though), Registry Editor at its best.
 
@@ -298,16 +277,13 @@ Note: Those services are disabled by "Optimize Services Tool", and only needed f
 -StartServerManagerWithServices.bat : For Windows Server 2019, starts Server Manager with required services, and set them back to "Disabled" (for next reboot).
 Note: Those services are disabled by "Optimize Services Tool", and only needed for Server Manager. "Disabled" state (also set when you run 'Optimize Services' tool) will be back at startup.
 
-
 Note: All these scripts will be extracted to "C:\Program Files\System Tools\System Utilities\Scripts"
-
-
 
 4) - Telemetry:
 
 -Telemetry script for both Windows and Office: It's a mixup between abbodi1406 telemetry script and OfficeRtool telemetry script from ratzlefatz, with few more entries.
 
--WPD : https://wpd.app/ is good.
+-WPD : https://wpd.app/ (not included) is good tool as well. 
 
 
 5) - Maintenance Applications:
@@ -324,7 +300,6 @@ https://github.com/lostindark/DriverStoreExplorer
 
 -ShortcutsSearchAndReplace : Find dead links and replace them in a batch.
 http://jacquelin.potier.free.fr/ShortcutsSearchAndReplace/
-
 
 
 6) - System Utilities:
