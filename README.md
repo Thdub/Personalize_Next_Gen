@@ -5,33 +5,32 @@ Download: https://github.com/Thdub/Personalize_Next_Gen/releases
 
 Infos: https://forums.mydigitallife.net/threads/custom-policies-set.78129/#post-1488737
 
-
-
 ---------------------------------------------------------------------------------------------------
-# PERSONALIZE PROJECT NEXTGEN CONTENTS
+			# PERSONALIZE PROJECT NEXTGEN CONTENTS
 
 # CUSTOMIZE ALL
 
-# 01 Debloat Context Menu
+	# 01 Debloat Context Menu
 
--01 Remove 'print' and 'printto' for common text-based files and internet shortcuts.
-    Some of the registry keys have permissions locked by default, so you might need to add that file through NSudo for complete optimization, or run batch file.
+	-01 Remove 'print' and 'printto' for common text-based files and internet shortcuts.
+	Some of the registry keys have permissions locked by default, so you might need to add that file through NSudo for complete optimization, or run batch file.
 
--02 Remove 3D Edit from Context Menu.
+	-02 Remove 3D Edit from Context Menu.
 
--03 Remove 3D Print from Context Menu.
+	-03 Remove 3D Print from Context Menu.
 
--04 Optimize/Debloat Context Menu. 
-    Hide: Compatibility, Offline Files, Playto, Workfolder.
-    Why "hide"? For convenience and safety reasons, registry values are not deleted, but renamed with a ? placed in front.
-    Doing so it "hides" the context menu item instead of deleting it, allowing easier recovery if needed: 
-    It's also simpler to search for ?{ in your favorite registry application, if you need to find those keys.
-    
-    -Compatibility: It will not hide or disable compatibility tab in properties, neither disable application compatibility assistant and/or engine (which I personally turned off via GPO).
-    but wil just hide the "useless" context menu entry.
-    -Offline Files: you don't need offline files if you don't use sync center.
-    -PlayTo is deprecated.
-    -Workfolder: Useless when you only have/use one computer (which isn't in a network/domain) and/or don't need to set workfolders.
+	-04 Optimize/Debloat Context Menu. 
+	    Hide: Compatibility, Offline Files, Playto, Workfolder.
+	    Why "hide"? For convenience and safety reasons, registry values are not deleted, but renamed with a ? placed in front.
+	    Doing so it "hides" the context menu item instead of deleting it, allowing easier recovery if needed: 
+	    It's also simpler to search for ?{ in your favorite registry application, if you need to find those keys.
+
+	    -Compatibility: It will not hide or disable compatibility tab in properties, neither disable application compatibility assistant and/or engine (which I personally turned off via GPO).
+	    but wil just hide the "useless" context menu entry.
+	    -Offline Files: you don't need offline files if you don't use sync center.
+	    -PlayTo is deprecated.
+	    -Workfolder: Useless when you only have/use one computer (which isn't in a network/domain) and/or don't need to set workfolders.
+
 ---------------------------------------------------------------------------------------------------
 # 02 Customize Context Menu
 
@@ -113,7 +112,6 @@ DB08 -	Desktop Background : Windows Update
 
 -02 ADD 'Windows Update' to Control Panel
 
-
 ---------------------------------------------------------------------------------------------------
 # 04 Customize System/appeareance
 
@@ -131,6 +129,7 @@ DB08 -	Desktop Background : Windows Update
 Note: This is default value. If you want 'Drive Letters' to appear before 'Drive Label', set dword value to 1 (dword:00000001)
 
 -07 SHOW seconds on taskbar clock
+
 ---------------------------------------------------------------------------------------------------
 # 05 Applications Context Menus
 
@@ -148,6 +147,7 @@ Note: Just cosmetic. Changes shell extension position so it will displays at bot
 -06 ADD "Open with Sound Forge Pro" for audio files and audio folders (Note: for Audio professionals)
 
 -07 ADD "Open with iZotope RX" for audio files and audio folders (Note: for Audio professionals)
+
 ---------------------------------------------------------------------------------------------------
 # 06 Customize WinX Menu
 
@@ -206,12 +206,11 @@ hashlnk direct download link:
 https://github.com/riverar/hashlnk/blob/master/bin/hashlnk_0.2.0.0.zip
 --------------------------------------------------------
 
-
 --------------------------------------------------------------------------------------------------
 # 07 Install Additional Scripts and Tools
 
-Simply run "Install_Additional_Scripts_and_Tools.exe or "Install_Additional_Scripts_and_Tools.bat to install additional scripts and tools.
-I also added a few (free) utilities that I use often.
+Simply run "Install_Additional_Scripts_and_Tools.bat to install additional scripts and tools.
+I also added a few (free, of course) utilities that I use often.
 
 1) - Custom Tools:
 
